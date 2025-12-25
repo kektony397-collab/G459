@@ -1,0 +1,32 @@
+{
+  "name": "copy-of-copy-of-copy-of-copy-of-gopi-distributors-billing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.22.3",
+    "lucide-react": "0.344.0",
+    "recharts": "2.12.2",
+    "clsx": "2.1.0",
+    "react-hook-form": "7.51.0",
+    "jspdf": "2.5.1",
+    "dexie": "3.2.7",
+    "jspdf-autotable": "3.8.2",
+    "xlsx": "0.18.5",
+    "dexie-react-hooks": "1.1.7",
+    "sonner": "1.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
