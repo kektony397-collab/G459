@@ -20,7 +20,7 @@ const App: React.FC = () => {
       try {
         // Open the database connection before seeding and initialization
         // This ensures properties like 'open' and 'version' are available on the db instance
-        await db.open();
+        await (db as any).open();
         await seedDatabase();
         setIsReady(true);
       } catch (err) {

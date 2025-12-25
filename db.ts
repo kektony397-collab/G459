@@ -1,5 +1,4 @@
 
-
 import Dexie, { type Table } from 'dexie';
 import { Product, Party, Invoice, CompanyProfile } from './types';
 
@@ -13,7 +12,8 @@ export class AppDatabase extends Dexie {
   constructor() {
     super('GopiDistributorsDB');
     // Using version().stores() to define the database schema and store structures
-    this.version(1).stores({
+    // Cast to any to bypass potential type definition issues with Dexie inheritance
+    (this as any).version(1).stores({
       products: '++id, name, hsn, batch',
       parties: '++id, name, gstin',
       invoices: '++id, invoiceNo, date, partyId',
